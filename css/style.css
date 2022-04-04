@@ -1,3 +1,10 @@
+:root {
+    --black: #222222;
+    --dark-pink: #F16D7F;
+    --light-pink: #F1E4E6;
+    --sales-bkg-color: #534947;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -10,4 +17,115 @@ body {
     margin: 0 auto;
 }
 
-/* 1:45:45 CSS stylelized */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__button {
+    border: none;
+    background-color: transparent;
+}
+
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+
+
+.header__nav {
+    display: none;
+}
+
+.brand {
+    display: flex;
+    margin: 0 0 62px 0;
+}
+
+.brand__title-wrp {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    padding: 0 0 0 92px;
+    background-color: var(--light-pink);
+}
+
+.brand__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.brand__subtitle {
+    display: block;
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 700;
+}
+
+.brand__subtitle-pink {
+    color: var(--dark-pink);
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales__item {
+    width: 360px;
+    height: 260px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: var(--sales-bkg-color);
+}
+
+.sales__item--women {
+    background-image: url(../image/saleforgirls.jpg);
+}
+
+.sales__item--men {
+    background-image: url(../image/saleforman.jpg);
+}
+
+.sales__item--kids {
+    background-image: url(../image/saleforkids.jpg);
+}
+
+.sales__item--accesories {
+    background-image: url(../image/salesaccesories.jpg);
+    width: 100%;
+    margin: 20px 0 97px 0;
+}
+
+/* 2:10 остановился на центрироовании текста в списках sales */

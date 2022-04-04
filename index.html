@@ -17,10 +17,11 @@
 <body>
     <header class="header">
 
-        <div class="container">
-
-            <img class="header__logo" src="image/logo.png" alt="logo">
-            <img class="header__loupe" src="image/loupe.svg" alt="loupe">
+        <div class="container header__wrp">
+            <div>
+                <img class="header__logo" src="image/logo.png" alt="logo">
+                <img class="header__loupe" src="image/loupe.svg" alt="loupe">
+            </div>
 
             <ul class="header__list">
                 <li class="header__item">
@@ -114,47 +115,52 @@
 
 
     <main>
-        <section>
-            <img src="image/mansection1.jpg" alt="main-man">
-            <h1>the brand of luxerious fashion</h1>
+        <section class="brand">
+            <img class="brand__img" src="image/mansection1.jpg" alt="main-man">
+            <div class="brand__title-wrp">
+                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span
+                            class="brand__subtitle-pink">fashion</span> </span> </h1>
+            </div>
         </section>
 
-        <section>
-            <h2>sales</h2>
-            <ul>
-                <li>
-                    <p>
-                        30% off
-                    </p>
-                    <p>
-                        for women
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        hot deal
-                    </p>
-                    <p>
-                        for men
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        new arrivals
-                    </p>
-                    <p>
-                        for kids
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        luxirous & trendy
-                    </p>
-                    <p>
-                        accessories
-                    </p>
-                </li>
-            </ul>
+        <section class="sales">
+            <div class="container">
+                <h2 class="visually-hidden">sales</h2>
+                <ul class="sales__list">
+                    <li class="sales__item sales__item--women">
+                        <p>
+                            30% off
+                        </p>
+                        <p>
+                            for women
+                        </p>
+                    </li>
+                    <li class="sales__item sales__item--men">
+                        <p>
+                            hot deal
+                        </p>
+                        <p>
+                            for men
+                        </p>
+                    </li>
+                    <li class="sales__item sales__item--kids">
+                        <p>
+                            new arrivals
+                        </p>
+                        <p>
+                            for kids
+                        </p>
+                    </li>
+                    <li class="sales__item sales__item--accesories">
+                        <p>
+                            luxirous & trendy
+                        </p>
+                        <p>
+                            accessories
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section>
@@ -306,7 +312,6 @@
             </ul>
         </section>
     </footer>
-
 
 
 
