@@ -3,6 +3,8 @@
     --dark-pink: #F16D7F;
     --light-pink: #F1E4E6;
     --sales-bkg-color: #534947;
+    --catalog-text-grey: #5D5D5D;
+    --catalog-card-bkg: #F8F8F8;
 }
 
 body {
@@ -107,6 +109,14 @@ body {
     height: 260px;
     box-sizing: border-box;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
     background-color: var(--sales-bkg-color);
 }
 
@@ -128,4 +138,82 @@ body {
     margin: 20px 0 97px 0;
 }
 
-/* 2:10 остановился на центрироовании текста в списках sales */
+.sales__item-text-pink {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-pink);
+}
+
+.catalog {
+    text-align: center;
+}
+
+.catalog__title {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.catalog__text {
+    color: #9F9F9F;
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 48px 0 48px 0;
+}
+
+.catalog__item {
+    width: 360px;
+    height: 581px;
+    text-align: initial;
+    margin: 0 0 30px 0;
+    background-color: var(--catalog-card-bkg);
+}
+
+.catalog__item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--catalog-text-grey);
+    padding: 0 0 18px 0;
+}
+
+.catalog__item-title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 25px 0 12px 0;
+}
+
+.catalog__item-text-pink {
+    color: var(--dark-pink);
+    padding: 0 0 20px 0;
+}
+
+.catalog__link {
+    border: 1px solid;
+    border-color: var(--dark-pink);
+    padding: 14px 38px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0 95px 0;
+    color: var(--dark-pink);
+}
+
+.about-us {
+    background-color: var(--black);
+    min-height: 341px;
+}
+
+.about-us__list {
+    display: flex;
+    text-align: center;
+    padding: 103px 0 0 0;
+}
+
+/*  ABOUT US LIST  задать стили для текста!*/
