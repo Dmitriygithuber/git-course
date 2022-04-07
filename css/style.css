@@ -60,10 +60,46 @@ body {
     margin: 0 0 0 33px;
 }
 
-
-
 .header__nav {
-    display: none;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    top: 75px;
+    height: 764px;
+    width: 232px;
+}
+
+.header__nav-title {
+    text-transform: uppercase;
+    margin: 37px 0 0 34px;
+}
+
+.header__nav-list {}
+
+.nav-sub-item {
+    text-decoration: none;
+    margin: 24px 0 0 33px;
+}
+
+.nav-sub-item__title {
+    text-transform: uppercase;
+    color: var(--dark-pink);
+    text-decoration: none;
+}
+
+.nav-sub-item__list {
+    margin: 12px 0 20px 23px;
+}
+
+.nav-sub-item__item {
+    margin: 0 0 11px 0;
+}
+
+.nav-sub-item__link {
+    text-decoration: none;
+    color: #6F6E6E;
 }
 
 .brand {
@@ -310,9 +346,15 @@ body {
     background-color: var(--dark-pink);
 }
 
+.copyright-bkg {
+    background-color: var(--black)
+}
+
 .footer__copyright {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 79px;
     background-color: var(--black);
 }
 
@@ -327,7 +369,5 @@ body {
 }
 
 .footer__copyright-item {
-    padding: 0 0 0 7px;
+    margin: 0 0 0 7px;
 }
-
-/* ФУТЕРУ ПИЗДА-НАДО ИСПРАВИТЬ */
