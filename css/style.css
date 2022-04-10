@@ -472,3 +472,37 @@ body {
 .footer__copyright-item {
     margin: 0 0 0 7px;
 }
+
+
+
+
+.registration {
+    color: var(--light-pink);
+    min-height: 148px;
+}
+
+.registration__title {
+    text-transform: uppercase;
+    color: var(--dark-pink);
+    font-size: 24px;
+    line-height: 29px;
+    padding: 60px 0 0 0;
+}
+
+.loyality {
+    color: #E5E5E5;
+}
+
+.loyality__wrp {}
+
+.loyality__title-name {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.loyality__input {
+    width: 359px;
+    height: 44px;
+}
