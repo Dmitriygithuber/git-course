@@ -21,8 +21,9 @@ body {
     outline: none;
 }
 
-.input:focus {
-    border: 1px solid var(--dark-pink);
+.input:focus,
+.input:hover {
+    border: 1px solid var(--light-pink);
 }
 
 .link:hover,
@@ -193,6 +194,17 @@ body {
     line-height: 58px;
     text-transform: uppercase;
     color: var(--black);
+    position: relative;
+}
+
+.brand__title:before {
+    content: "";
+    background-image: url(../image/brand-decor-element.png);
+    width: 12px;
+    height: 92px;
+    position: absolute;
+    left: -30px;
+    top: 3px;
 }
 
 .brand__subtitle {
@@ -205,6 +217,7 @@ body {
 .brand__subtitle-pink {
     color: var(--dark-pink);
 }
+
 
 .sales__list {
     display: flex;
@@ -473,11 +486,8 @@ body {
     margin: 0 0 0 7px;
 }
 
-
-
-
 .registration {
-    color: var(--light-pink);
+    background-color: #F8F3F4;
     min-height: 148px;
 }
 
@@ -490,12 +500,22 @@ body {
 }
 
 .loyality {
-    color: #E5E5E5;
+    background-color: #FFFFFF
 }
 
-.loyality__wrp {}
+.loyality__wrp {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0 0 0;
+}
 
-.loyality__title-name {
+.loyality__form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.loyality__title {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
@@ -503,6 +523,123 @@ body {
 }
 
 .loyality__input {
-    width: 359px;
+    width: 360px;
     height: 44px;
+    margin: 20px 0 0 0;
+    border: 1px solid #A4A4A4;
+    padding: 0 0 0 17px;
+}
+
+.loyality__wrp-input {
+    margin: 33px 0 35px 23px;
+}
+
+[type="radio"] {
+    display: none;
+}
+
+.loyality__label {
+    position: relative;
+    margin: 0 47px 0 0;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.loyality__label:before {
+    content: "";
+    position: absolute;
+    border: 1px solid #A4A4A4;
+    border-radius: 20px;
+    width: 17px;
+    height: 17px;
+    left: -27px;
+    top: -2px;
+}
+
+[type="radio"]:checked+.loyality__label:before {
+    background: var(--dark-pink);
+}
+
+.loyality__label:hover {
+    cursor: pointer;
+}
+
+.loyality__text-form {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin: 15px 0 39px 0;
+    width: 360px;
+}
+
+.loyality__button {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 16px 66px 16px 29px;
+    background-color: var(--dark-pink);
+    position: relative;
+    margin: 0 0 96px 0;
+    border: none;
+}
+
+.loyality__button:before {
+    content: "";
+    background-image: url(../image/right-arrow-btn-registration.png);
+    position: absolute;
+    width: 17px;
+    height: 10px;
+    right: 30px;
+    top: 18px;
+}
+
+.loyality__button:hover {
+    -webkit-box-shadow: 2px 2px 32px -8px rgba(0, 0, 0, 0.16) inset;
+    -moz-box-shadow: 2px 2px 32px -8px rgba(0, 0, 0, 0.16) inset;
+    box-shadow: 2px 2px 32px -8px rgba(0, 0, 0, 0.16) inset;
+}
+
+.loyality__info {
+    width: 652px;
+}
+
+.loyality__title-info {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.loyality__text-info {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 22px 0 22px 0;
+}
+
+.loyality__list {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    padding: 0 0 0 43px;
+}
+
+.loyality__item {
+    margin: 0 0 16px 0;
+    position: relative;
+}
+
+.loyality__item:before {
+    content: "";
+    background-image: url(../image/registration-check-mark.png);
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: 8px;
+    left: -43px;
 }
