@@ -18,11 +18,16 @@
     <header class="header">
 
         <div class="container header__wrp">
-            <div>
+            <div class="header__wrp-logo">
                 <a href="index.html">
                     <img class="header__logo" src="image/logo.png" alt="logo">
                 </a>
-                <img class="header__loupe" src="image/loupe.svg" alt="loupe">
+                <form class="header__form" action="">
+                    <img class="header__loupe" src="image/loupe.svg" alt="loupe">
+                    <label class="header__label visually-hidden" for="seacrh">поиск</label>
+                    <input type="search" placeholder="Search" id="search">
+                </form>
+
             </div>
 
             <ul class="header__list">
