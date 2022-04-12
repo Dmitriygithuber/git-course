@@ -23,19 +23,23 @@ body {
 
 .input:focus,
 .input:hover {
-    border: 1px solid var(--light-pink);
+    outline: none;
+    background-color: var(--light-pink);
 }
 
+.link:active,
 .link:hover,
 .link:focus {
     opacity: 0.7;
 }
 
+.link-pink:active,
 .link-pink:hover,
 .link-pink:focus {
     color: var(--dark-pink);
 }
 
+.catalog__link:active,
 .catalog__link:hover,
 .catalog__link:focus {
     opacity: 0.7;
@@ -109,6 +113,14 @@ body {
     justify-content: space-between;
     min-height: 75px;
     align-items: center;
+}
+
+.header__wrp-logo {
+    display: flex;
+}
+
+.header__form {
+    position: relative;
 }
 
 .header__logo {
