@@ -1,0 +1,42 @@
+.brand {
+    display: flex;
+    margin: 0 0 62px 0;
+}
+
+.brand__title-wrp {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    padding: 0 0 0 92px;
+    background-color: $light-pink;
+}
+
+.brand__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: $black;
+    position: relative;
+}
+
+.brand__title:before {
+    content: "";
+    background-image: url(../image/brand-decor-element.png);
+    width: 12px;
+    height: 92px;
+    position: absolute;
+    left: -30px;
+    top: 3px;
+}
+
+.brand__subtitle {
+    display: block;
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 700;
+}
+
+.brand__subtitle-pink {
+    color: $dark-pink;
+}
