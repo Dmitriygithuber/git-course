@@ -28,6 +28,11 @@
     cursor: pointer;
 }
 
+.header__loupe:before {
+    content: '';
+
+}
+
 .header__list {
     display: flex;
 }
@@ -39,6 +44,10 @@
 
 .header__link {
     margin: 0 0 0 33px;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .header__nav {
@@ -55,6 +64,10 @@
     -moz-box-shadow: 1px 12px 56px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 1px 12px 56px 0px rgba(34, 60, 80, 0.2);
     z-index: 1;
+
+    @include tablet {
+        right: 0;
+    }
 }
 
 .header__nav-title {
@@ -72,4 +85,16 @@
 
 .header__nav:hover {
     display: block;
+}
+
+.header__form {
+    position: relative;
+    top: 4px;
+    left: 32px;
+}
+
+.header__input {
+    position: absolute;
+    padding: 10px 39px;
+    background: transparent;
 }

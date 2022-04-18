@@ -18,6 +18,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 48px 0 48px 0;
+
+    @include tablet {
+        margin: 72px 0 32px 0;
+    }
+
+    @include mobile {
+        margin: 64px 0 41px 0;
+    }
 }
 
 .catalog__item {
@@ -26,6 +34,14 @@
     text-align: initial;
     margin: 0 0 30px 0;
     background-color: $catalog-card-bkg;
+
+    @include tablet {
+        margin: 0 0 16px 0;
+    }
+
+    @include mobile {
+        margin: 0 0 16px 0;
+    }
 }
 
 .catalog__wrap-overlay {
@@ -79,6 +95,10 @@
     margin: 0 0 95px 0;
     color: $dark-pink;
     transition-duration: 1s;
+
+    @include tablet {
+        margin: 0 0 65px 0;
+    }
 }
 
 .catalog__link:active,

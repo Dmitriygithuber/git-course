@@ -18,6 +18,17 @@
     line-height: 19px;
     color: #FFFFFF;
     background-color: $sales-bkg-color;
+
+    @include tablet {
+        width: 232px;
+        height: 167px;
+    }
+
+    @include mobile {
+        width: 343px;
+        height: 247px;
+        margin: 0 0 32px 0;
+    }
 }
 
 .sales__item--women {
@@ -36,6 +47,14 @@
     background-image: url(../image/salesaccesories.jpg);
     width: 100%;
     margin: 20px 0 97px 0;
+
+    @include tablet {
+        margin: 20px 0 154px 0;
+    }
+
+    @include mobile {
+        margin: 0 0 64px 0;
+    }
 }
 
 .sales__item-text-pink {
