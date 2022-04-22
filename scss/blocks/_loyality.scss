@@ -5,13 +5,27 @@
 .loyality__wrp {
     display: flex;
     justify-content: space-between;
-    padding: 64px 0 0 0;
+    margin: 64px 0 0 0;
+
+    @include tablet {
+        margin: 40px 0 96px 0;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        margin: 40px 0 40px 0;
+    }
 }
 
 .loyality__form {
     display: flex;
     flex-direction: column;
     width: 360px;
+
+    @include tablet {
+        width: 100%;
+        margin: 0 22px 0 0;
+    }
 }
 
 .loyality__title {
@@ -27,6 +41,7 @@
     margin: 20px 0 0 0;
     border: 1px solid #A4A4A4;
     padding: 0 0 0 17px;
+    box-sizing: border-box;
 }
 
 .loyality__wrp-input {
@@ -96,6 +111,14 @@
 
 .loyality__info {
     width: 652px;
+
+    @include tablet {
+        width: 100%;
+    }
+
+    @include mobile {
+        margin: 0 0 100px 0;
+    }
 }
 
 .loyality__title-info {
@@ -104,6 +127,10 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
 }
 
 .loyality__text-info {
@@ -112,6 +139,11 @@
     line-height: 29px;
     color: #000000;
     margin: 22px 0 22px 0;
+
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
+
 }
 
 .loyality__list {
@@ -125,6 +157,10 @@
 .loyality__item {
     margin: 0 0 16px 0;
     position: relative;
+
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
 }
 
 .loyality__item:before {

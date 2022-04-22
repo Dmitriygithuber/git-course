@@ -1,12 +1,18 @@
 .footer__bkg {
     background-image: url(../image/footer-bkg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .footer__feedback {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 .footer__feedback-review {
@@ -15,6 +21,10 @@
     align-items: center;
     width: 360px;
     padding: 87px 0 130px 0;
+
+    @include tablet {
+        padding: 53px 0 48px 0;
+    }
 }
 
 .footer__feedback-text {
@@ -22,6 +32,10 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+
+    @include mobile {
+        @include font(18px, 21px, 400);
+    }
 }
 
 .footer__application {
@@ -30,6 +44,15 @@
     flex-direction: column;
     width: 557px;
     align-items: center;
+
+    @include tablet {
+        padding: 0 0 140px 0;
+    }
+
+    @include mobile {
+        padding: 0 0 109px 0;
+        width: 0;
+    }
 }
 
 .footer__application-title {
@@ -39,13 +62,19 @@
     text-transform: uppercase;
     font-weight: 400;
     margin: 0 0 32px 0;
+
+    @include mobile {
+        @include font(14px, 21px, 400);
+        margin: 0 0 22px 0;
+        width: 271px;
+    }
 }
 
 .footer__application-title-bold {
     display: block;
     font-weight: 700;
     font-size: 24px;
-    line-height: 167.2%;
+    line-height: 40px;
     text-align: center;
 }
 
@@ -82,12 +111,21 @@
     align-items: center;
     height: 79px;
     background-color: $black;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        padding: 43px 0 0 0;
+    }
 }
 
 .footer__copyright-text {
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
+
+    @include mobile {
+        padding: 0 0 10px 0;
+    }
 }
 
 .footer__copyright-list {
