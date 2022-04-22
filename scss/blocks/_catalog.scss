@@ -77,12 +77,9 @@
     transform: translate(-50%, -50%);
     color: #FFFFFF;
     background-color: transparent;
-    padding: 14px 14px 14px 30px;
+    padding: 17px 14px 17px 46px;
     border: 1px solid;
     border-color: #FFFFFF;
-    background-image: url(../image/catalog-cart.png);
-    background-repeat: no-repeat;
-    background-position: left;
     cursor: pointer;
 }
 
@@ -121,7 +118,13 @@
 }
 
 .catalog__button:before {
-    display: none;
+    content: '';
+    background-image: url(../image/catalog-cart.png);
+    width: 26px;
+    height: 24px;
+    position: absolute;
+    top: 11px;
+    left: 9px;
 }
 
 .catalog__item:hover .catalog__button,
