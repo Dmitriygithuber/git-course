@@ -993,4 +993,24 @@ body {
   top: 8px;
   left: -43px;
 }
+
+.shopping-heading {
+  background-color: #F8F3F4;
+  min-height: 148px;
+}
+
+.shopping-heading__title {
+  text-transform: uppercase;
+  color: #F16D7F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  padding: 60px 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .shopping-heading__title {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
