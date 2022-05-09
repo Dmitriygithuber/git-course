@@ -103,10 +103,15 @@
     top: 18px;
 }
 
-.loyality__button:hover {
+.loyality__button:hover,
+.loyality__button:focus {
     -webkit-box-shadow: 2px 2px 32px -8px rgba(0, 0, 0, 0.16) inset;
     -moz-box-shadow: 2px 2px 32px -8px rgba(0, 0, 0, 0.16) inset;
     box-shadow: 2px 2px 32px -8px rgba(0, 0, 0, 0.16) inset;
+}
+
+.loyality__button:active {
+    background-color: #a54653;
 }
 
 .loyality__info {
