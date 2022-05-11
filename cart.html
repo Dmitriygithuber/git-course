@@ -19,11 +19,14 @@
     <header class="header">
 
         <div class="container header__wrp">
-            <div>
+            <div class="header__wrp-logo">
                 <a href="index.html">
-                    <img class="header__logo" src="image/logo.png" alt="logo">
+                    <img class="header__logo header__rotate-vert-center" src="image/logo.png" alt="logo">
                 </a>
-                <img class="header__loupe" src="image/loupe.svg" alt="loupe">
+                <form class="header__form" action="#">
+                    <label class="header__search-label visually-hidden" for="Seacrh">Search</label>
+                    <input class="header__input" type="search" placeholder="Search" id="Search">
+                </form>
             </div>
 
             <ul class="header__list">
@@ -32,6 +35,7 @@
                         <img src="image/burger.svg" alt="burgermenu">
                     </button>
                     <nav class="header__nav">
+                        <button type="button" class="header__button-close button"></button>
                         <h2 class="header__nav-title">menu</h2>
                         <ul class="header__nav-list">
                             <li class="header__nav-item nav-sub-item">
@@ -122,17 +126,66 @@
         </section>
         <div class="container">
             <section class="shopping-cart">
+                <div class="shopping-cart__wrp-card">
+                    <ul class="shopping-cart__cards">
+                        <li class="shopping-cart__card">
+                            <img src="./image/shopping-cart-card1.jpg" alt="man-with-panama">
+                            <ul class="shopping-cart__list">
+                                <li>
+                                    <h2 class="shopping-cart__title">mango people t-shirt</h2>
+                                </li>
+                                <li class="shopping-cart__item">
+                                    <p class="shopping-cart__text">Price: $300</p>
+                                </li>
+                                <li class="shopping-cart__item">
+                                    <p class="shopping-cart__text">Color: Red</p>
+                                </li>
+                                <li class="shopping-cart__item">
+                                    <p class="shopping-cart__text">Size: Xl</p>
+                                </li>
+                                <li class="shopping-cart__item">
+                                    <p class="shopping-cart__text">Quantity: 2</p>
+                                </li>
+                                <li class="shopping-cart__card">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
 
+                    <ul class="shopping-cart__cards">
+                        <li class="shopping-cart__card">
+                            <img src="./image/shopping-cart-card2.jpg" alt="blck-man-in-jacket">
+                            <ul class="shopping-cart__list">
+                                <li>
+                                    <h2 class="shopping-cart__title">mango people t-shirt</h2>
+                                </li>
+                                <li class="shopping-cart__item">
+                                    <p class="shopping-cart__text">Price: $300</p>
+                                </li>
+                                <li class="shopping-cart__item">
+                                    <p class="shopping-cart__text">Color: Red</p>
+                                </li>
+                                <li class="shopping-cart__item">
+                                    <p class="shopping-cart__text">Size: Xl</p>
+                                </li>
+                                <li class="shopping-cart__item">
+                                    <p class="shopping-cart__text">Quantity: 2</p>
+                                </li>
+                                <li class="shopping-cart__card">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+                </div>
             </section>
 
         </div>
 
 
     </main>
-
-
-
-
 
 
     <footer class="footer">
